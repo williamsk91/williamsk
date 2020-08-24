@@ -79,8 +79,7 @@ export default function Project() {
               https://kaminote.io/
             </Anchor>
             ) is an all in one organisation tool for your to-dos, tasks, and
-            projects. I would love to share the codebases and talk about it
-            more.
+            projects.
           </>
         }
         color="blue"
@@ -111,7 +110,7 @@ export default function Project() {
       <Spacer spacing={120} />
       <Section
         title="Small projects"
-        desc="These are a small collection of small projects I have worked on."
+        desc="This is a collection of small projects that I have worked on."
         color="purple"
       >
         <List

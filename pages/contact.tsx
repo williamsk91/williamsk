@@ -42,7 +42,7 @@ export default function Contact() {
       <Section title="Resume" color="red">
         <Text type="main">
           <Anchor href="resume.pdf" color="red" download>
-            Resume
+            Click to download
           </Anchor>
         </Text>
       </Section>

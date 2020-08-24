@@ -14,7 +14,7 @@ export default function About() {
       <Section
         title="Frontend"
         id="frontend"
-        desc="Frontend development is bread and butter. I love coding fast, responsive, and reactive web apps."
+        desc="Frontend development is my bread and butter. I love coding fast, responsive, and reactive web apps."
         color="red"
       >
         <SkillList>
@@ -70,7 +70,7 @@ export default function About() {
       <Spacer spacing={120} />
       <Section
         title="Other Programming Languages"
-        desc="Each language bring its own uniqueness and I love learning them."
+        desc="Each language brings its own uniqueness and I love learning them."
         color="purple"
       >
         <SkillList>

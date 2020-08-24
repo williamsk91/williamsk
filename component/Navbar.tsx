@@ -27,7 +27,7 @@ export const Navbar = (props: Props) => {
       text = "codes for fun";
       break;
     case "/about":
-      text = "love learning";
+      text = "loves learning";
       break;
     case "/contact":
       text = "is here to help";
