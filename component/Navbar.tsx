@@ -10,9 +10,7 @@ import { MenuOutlined, CaretDownOutlined } from "@ant-design/icons";
 import NextLink from "next/link";
 import Head from "next/head";
 
-interface Props {}
-
-export const Navbar = (props: Props) => {
+export const Navbar = () => {
   const { pathname } = useRouter();
 
   const [aboutIsOpen, setAboutIsOpen] = useState(false);
