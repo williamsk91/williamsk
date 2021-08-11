@@ -1,9 +1,10 @@
-import { Section } from "../component/Section";
-import { Text } from "../component/Text";
-import { List } from "../component/List";
-import { Spacer } from "../component/Spacer";
-import { Anchor } from "../component/Link";
 import styled from "styled-components";
+
+import { Anchor } from "../component/Link";
+import { List } from "../component/List";
+import { Section } from "../component/Section";
+import { Spacer } from "../component/Spacer";
+import { Text } from "../component/Text";
 import { colors } from "../styles/colors";
 
 export default function Project() {
@@ -19,6 +20,41 @@ export default function Project() {
       </Quote>
       <Spacer spacing={60} />
       <Section
+        title="Calendar data"
+        subtitle="Weekly data visualization for Google Calendar"
+        desc={
+          <>
+            Calendar data (
+            <Anchor
+              href="https://calendar-data.vercel.app"
+              active
+              color="green"
+              target="_blank"
+            >
+              calendar-data.vercel.app
+            </Anchor>
+            ) is a weekly data visualization for Google Calendar. It interacts
+            with Google Calendar API and setup using Firebase.
+          </>
+        }
+        color="green"
+      >
+        <List
+          items={[
+            [
+              <Text type="sub">React (Typescript)</Text>,
+              <Text type="sub">Styled Components</Text>,
+            ],
+            [
+              <Text type="sub">Firebase Authentication</Text>,
+              <Text type="sub">Google Calendar API</Text>,
+            ],
+            [<Text type="sub">Vercel</Text>],
+          ]}
+        />
+      </Section>
+      <Spacer spacing={120} />
+      <Section
         title="Overcast"
         subtitle="your personal calendar"
         desc={
@@ -27,16 +63,16 @@ export default function Project() {
             <Anchor
               href="https://overcast.life/"
               active
-              color="green"
+              color="blue"
               target="_blank"
             >
-              https://overcast.life/
+              overcast.life
             </Anchor>
             ) is a calendar with a built in task list. Organise your schedules
             and tasks all in one place.
           </>
         }
-        color="green"
+        color="blue"
       >
         <List
           items={[
@@ -73,16 +109,16 @@ export default function Project() {
             <Anchor
               href="https://kaminote.io/"
               active
-              color="blue"
+              color="purple"
               target="_blank"
             >
-              https://kaminote.io/
+              kaminote.io
             </Anchor>
             ) is an all in one organisation tool for your to-dos, tasks, and
             projects.
           </>
         }
-        color="blue"
+        color="purple"
       >
         <List
           items={[
@@ -111,7 +147,7 @@ export default function Project() {
       <Section
         title="Small projects"
         desc="This is a collection of small projects that I have worked on."
-        color="purple"
+        color="sky"
       >
         <List
           items={[
@@ -119,7 +155,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/KrBQXJ"
-                  color="purple"
+                  color="sky"
                   target="_blank"
                 >
                   Calculator
@@ -128,7 +164,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/oQQEwr"
-                  color="purple"
+                  color="sky"
                   target="_blank"
                 >
                   Pomodoro Timer
@@ -137,7 +173,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/vQrdye"
-                  color="purple"
+                  color="sky"
                   target="_blank"
                 >
                   Markdown Editor
