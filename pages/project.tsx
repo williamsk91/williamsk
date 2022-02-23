@@ -11,30 +11,40 @@ export default function Project() {
   return (
     <div>
       <Spacer spacing={120} />
+
       <Quote>
         <Text type="main">
-          Some of these projects are saved in Github private repositories.
-          Please share with me your github username or email and I will be more
-          than happy to add you as a collaborator.
+          I enjoy making projects during my free time. Projects are public and
+          I've attached screenshots in GitHub README.
         </Text>
       </Quote>
+
       <Spacer spacing={60} />
+
       <Section
-        title="Calendar data"
-        subtitle="Weekly data visualization for Google Calendar"
+        title="Dasu"
+        subtitle="Publish your book online"
         desc={
           <>
-            Calendar data (
+            All in one solution to self-publish your book online (
             <Anchor
-              href="https://calendar-data.vercel.app"
+              href="https://dasu-web.vercel.app/"
               active
               color="green"
               target="_blank"
             >
-              calendar-data.vercel.app
+              Website
             </Anchor>
-            ) is a weekly data visualization for Google Calendar. It interacts
-            with Google Calendar API and setup using Firebase.
+            ) (
+            <Anchor
+              href="https://github.com/williamsk91/dasu"
+              active
+              color="green"
+              target="_blank"
+            >
+              GitHub
+            </Anchor>
+            )
           </>
         }
         color="green"
@@ -42,37 +52,110 @@ export default function Project() {
         <List
           items={[
             [
+              <Text type="sub">Typescript</Text>,
+              <Text type="sub">Docusaurus 2</Text>,
+              <Text type="sub">Remark & Rehype</Text>,
+            ],
+            [<Text type="sub">Pandoc</Text>, <Text type="sub">Lua</Text>],
+            [<Text type="sub">Vercel</Text>],
+          ]}
+        />
+      </Section>
+
+      <Spacer spacing={120} />
+      <Section
+        title="Poopipado"
+        subtitle="Beautiful poop tracker mobile app"
+        desc={
+          <>
+            Mobile application for tracking your poops (
+            <Anchor
+              href="https://github.com/williamsk91/poopypado"
+              active
+              color="blue"
+              target="_blank"
+            >
+              GitHub
+            </Anchor>
+            )
+          </>
+        }
+        color="blue"
+      >
+        <List
+          items={[
+            [<Text type="sub">React-Native (Typescript)</Text>],
+            [<Text type="sub">SQLite</Text>],
+            [<Text type="sub">Expo</Text>],
+          ]}
+        />
+      </Section>
+
+      <Spacer spacing={120} />
+      <Section
+        title="Calendar data"
+        desc={
+          <>
+            Weekly data visualization for Google Calendar user. It interacts
+            with Google Calendar API and setup using Firebase (
+            <Anchor
+              href="https://calendar-data.vercel.app"
+              active
+              color="purple"
+              target="_blank"
+            >
+              Website
+            </Anchor>
+            ) (
+            <Anchor
+              href="https://github.com/williamsk91/calendar-data"
+              active
+              color="purple"
+              target="_blank"
+            >
+              GitHub
+            </Anchor>
+            )
+          </>
+        }
+        color="purple"
+      >
+        <List
+          items={[
+            [
               <Text type="sub">React (Typescript)</Text>,
-              <Text type="sub">Styled Components</Text>,
+              <Text type="sub">NextJS</Text>,
             ],
             [
               <Text type="sub">Firebase Authentication</Text>,
               <Text type="sub">Google Calendar API</Text>,
             ],
-            [<Text type="sub">Vercel</Text>],
+            [<Text type="sub">Vercel</Text>, <Text type="sub">Firebase</Text>],
           ]}
         />
       </Section>
+
       <Spacer spacing={120} />
+
       <Section
         title="Overcast"
-        subtitle="your personal calendar"
+        subtitle="Your personal calendar"
         desc={
           <>
-            Overcast (
+            Overcast is a calendar with a built in task list. Organize your
+            schedules and tasks all in one place (
             <Anchor
-              href="https://overcast.life/"
+              href="https://github.com/williamsk91/clock"
               active
-              color="blue"
+              color="sky"
               target="_blank"
             >
-              overcast.life
+              GitHub
             </Anchor>
-            ) is a calendar with a built in task list. Organise your schedules
-            and tasks all in one place.
+            )
           </>
         }
-        color="blue"
+        color="sky"
       >
         <List
           items={[
@@ -83,42 +166,41 @@ export default function Project() {
               <Text type="sub">FullCalendar</Text>,
             ],
             [
-              <Text type="sub">NodeJS (Typescript)</Text>,
-              <Text type="sub">TypeGraphQL</Text>,
+              <Text type="sub">Express (Typescript)</Text>,
               <Text type="sub">PostgreSQL</Text>,
-              <Text type="sub">Apollo Server</Text>,
-              <Text type="sub">Express</Text>,
+              <Text type="sub">Apollo Server (GraphQL)</Text>,
               <Text type="sub">OAuth + JWT</Text>,
             ],
             [
               <Text type="sub">Vercel</Text>,
               <Text type="sub">Heroku</Text>,
               <Text type="sub">Figma</Text>,
-              <Text type="sub">Drift</Text>,
             ],
           ]}
         />
       </Section>
+
       <Spacer spacing={120} />
+
       <Section
         title="Kaminote"
-        subtitle="an evolving organisation tool"
+        subtitle="An evolving organisation tool"
         desc={
           <>
-            Kaminote (
+            KamiNote is an all in one organization tool for your to-dos, tasks,
+            and projects (
             <Anchor
-              href="https://kaminote.io/"
+              href="https://github.com/williamsk91/KamiNote"
               active
-              color="purple"
+              color="yellow"
               target="_blank"
             >
-              kaminote.io
+              GitHub
             </Anchor>
-            ) is an all in one organisation tool for your to-dos, tasks, and
-            projects.
+            )
           </>
         }
-        color="purple"
+        color="yellow"
       >
         <List
           items={[
@@ -129,9 +211,9 @@ export default function Project() {
               <Text type="sub">Prosemirror (WYSIWYG)</Text>,
             ],
             [
-              <Text type="sub">NodeJS (Typescript)</Text>,
+              <Text type="sub">Express (Typescript)</Text>,
               <Text type="sub">PostgreSQL</Text>,
-              <Text type="sub">Apollo Server</Text>,
+              <Text type="sub">Apollo Server (GraphQL)</Text>,
               <Text type="sub">OAuth + JWT</Text>,
             ],
             [
@@ -143,11 +225,13 @@ export default function Project() {
           ]}
         />
       </Section>
+
       <Spacer spacing={120} />
+
       <Section
-        title="Small projects"
-        desc="This is a collection of small projects that I have worked on."
-        color="sky"
+        title="Mini projects"
+        desc="A collection of smaller projects"
+        color="red"
       >
         <List
           items={[
@@ -155,7 +239,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/KrBQXJ"
-                  color="sky"
+                  color="red"
                   target="_blank"
                 >
                   Calculator
@@ -164,7 +248,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/oQQEwr"
-                  color="sky"
+                  color="red"
                   target="_blank"
                 >
                   Pomodoro Timer
@@ -173,7 +257,7 @@ export default function Project() {
               <Text type="sub">
                 <Anchor
                   href="https://codepen.io/williamsk91/pen/vQrdye"
-                  color="sky"
+                  color="red"
                   target="_blank"
                 >
                   Markdown Editor
@@ -192,6 +276,7 @@ export default function Project() {
           ]}
         />
       </Section>
+
       <Spacer spacing={120} />
     </div>
   );
