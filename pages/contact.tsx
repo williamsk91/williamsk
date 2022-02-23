@@ -1,6 +1,6 @@
-import { Spacer } from "../component/Spacer";
-import { Section } from "../component/Section";
 import { Anchor } from "../component/Link";
+import { Section } from "../component/Section";
+import { Spacer } from "../component/Spacer";
 import { Text } from "../component/Text";
 
 export default function Contact() {
@@ -41,7 +41,7 @@ export default function Contact() {
       <Spacer spacing={120} />
       <Section title="Resume" color="red">
         <Text type="main">
-          <Anchor href="resume.pdf" color="red" download>
+          <Anchor href="Williams Kwan - Resume.pdf" color="red" download>
             Click to download
           </Anchor>
         </Text>
