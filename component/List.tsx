@@ -21,6 +21,11 @@ const Container = styled.div<{ col: number }>`
   display: grid;
   grid-template-columns: ${(p) => `repeat(${p.col}, 1fr)`};
   grid-gap: 24px;
+
+  & & {
+    margin-top: 12px;
+    margin-left: 48px;
+  }
 `;
 
 const Column = styled.div`
