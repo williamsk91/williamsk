@@ -1,11 +1,12 @@
-import { Section, Hr } from "../component/Section";
-import { Text, Colored, typography } from "../component/Text";
-import { Spacer } from "../component/Spacer";
-import styled from "styled-components";
-import { List } from "../component/List";
 import { ReactNode } from "react";
-import { Color } from "../styles/colors";
+import styled from "styled-components";
+
 import { isMobile } from "../component/device";
+import { List } from "../component/List";
+import { Hr, Section } from "../component/Section";
+import { Spacer } from "../component/Spacer";
+import { Colored, Text, typography } from "../component/Text";
+import { Color } from "../styles/colors";
 
 export default function About() {
   return (
@@ -19,9 +20,10 @@ export default function About() {
       >
         <SkillList>
           <Colored color="red">Typescript</Colored>,{" "}
-          <Colored color="red">React</Colored>, Redux, Storybook, Apollo
-          (GraphQL), Styled Components, NextJS, Testing-Library, Jest, HTML,
-          CSS, and <Colored color="red">JS</Colored>
+          <Colored color="red">React</Colored>, React-Native, Vue, Redux,
+          Storybook, Styled Components, SCSS,{" "}
+          <Colored color="red">NextJS</Colored>, Testing-Library, Jest, HTML,
+          CSS, and JS
         </SkillList>
       </Section>
       <Spacer spacing={120} />
@@ -38,10 +40,12 @@ export default function About() {
         color="green"
       >
         <SkillList>
-          <Colored color="green">NodeJS</Colored>, Express, Apollo,{" "}
-          <Colored color="green">Elixir</Colored>, Phoenix, Absinthe, Ecto,{" "}
-          <Colored color="green">PostgreSQL</Colored>, DynamoDB, MongoDB, OAuth,
-          JWT, and Firebase
+          <Colored color="green">Express</Colored> (NodeJS),{" "}
+          <Colored color="green">Phoenix</Colored> (Elixir),{" "}
+          <Colored color="green">Ruby on Rails</Colored> (Ruby), GraphQL (Apollo
+          & Absinthe), <Colored color="green">PostgreSQL</Colored>, MySQL,
+          SQLite, DynamoDB, MongoDB, OAuth, JWT, and{" "}
+          <Colored color="green">Firebase</Colored>
         </SkillList>
       </Section>
       <Spacer spacing={120} />
@@ -64,7 +68,7 @@ export default function About() {
           <Colored color="blue">Serverless Framework</Colored>,{" "}
           <Colored color="blue">Heroku</Colored>, Vercel, Netlify,{" "}
           <Colored color="blue">Github Actions</Colored>, Travis CI, Contentful,
-          and <Colored color="blue">Sentry</Colored>
+          Rollbar, and <Colored color="blue">Sentry</Colored>
         </SkillList>
       </Section>
       <Spacer spacing={120} />
@@ -74,7 +78,7 @@ export default function About() {
         color="purple"
       >
         <SkillList>
-          <Colored color="purple">C</Colored>, Python, Rust, and Haskell
+          <Colored color="purple">C</Colored>, Python, Lisp, Rust, and Haskell
         </SkillList>
       </Section>
       <Spacer spacing={120} />
@@ -125,7 +129,7 @@ export default function About() {
                   </>,
                   <>
                     Improved Japanese language skills from N3 to{" "}
-                    <Colored color="red">N2</Colored> within a year
+                    <Colored color="red">N2</Colored>
                   </>,
                 ]}
                 color="red"
@@ -144,7 +148,6 @@ export default function About() {
                     Awarded a <Colored color="green">scholarship</Colored> for{" "}
                     <Colored color="green">academic excellence</Colored>
                   </>,
-                  <>Demonstrated leadership skills in various group projects</>,
                 ]}
                 color="green"
               />,
