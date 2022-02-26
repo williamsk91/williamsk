@@ -10,7 +10,7 @@ export default function Experience() {
 
       <Section
         title="Linkers"
-        subtitle="Web Developer"
+        subtitle="Senior Web Developer"
         info="Tokyo (Remote), Japan - Nov 2020 - Present"
         desc="Marketplace for Japanese banks and businesses (FinTech)"
         color="red"
@@ -69,6 +69,10 @@ export default function Experience() {
               <Text type="sub">
                 Design APIs with Backend Engineer using{" "}
                 <Colored color="red">Ruby on Rails</Colored>
+              </Text>,
+              <Text type="sub">
+                Develop responsive UI for mobile, tablet, and PC users with
+                designer
               </Text>,
             ],
           ]}
