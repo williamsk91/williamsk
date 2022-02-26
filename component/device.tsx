@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const isMobile = `only screen and (max-width: 630px)`;
+export const isMobile = `only screen and (max-width: 960px)`;
 
 export const MobileOnly = styled.div`
   display: none;

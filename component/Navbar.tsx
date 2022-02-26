@@ -1,14 +1,15 @@
+import { CaretDownOutlined, MenuOutlined } from "@ant-design/icons";
+import { Button, Popover } from "antd";
+import Head from "next/head";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Text, typography } from "./Text";
-import { useRouter } from "next/router";
+
 import { colors } from "../styles/colors";
-import { Link } from "./Link";
 import { DesktopOnly, MobileOnly } from "./device";
-import { Popover, Button } from "antd";
-import { MenuOutlined, CaretDownOutlined } from "@ant-design/icons";
-import NextLink from "next/link";
-import Head from "next/head";
+import { Link } from "./Link";
+import { Text, typography } from "./Text";
 
 export const Navbar = () => {
   const { pathname } = useRouter();
@@ -18,7 +19,7 @@ export const Navbar = () => {
 
   let text: string = "codes";
   switch (pathname) {
-    case "/experience":
+    case "/work":
       text = "works at Cadmus";
       break;
     case "/project":
@@ -44,12 +45,12 @@ export const Navbar = () => {
         <DesktopOnly>
           <DesktopLinkContainer>
             <Link
-              href="/experience"
-              active={pathname === "/experience"}
+              href="/work"
+              active={pathname === "/work"}
               color="red"
               size={typography.main.size}
             >
-              Experience
+              Work
             </Link>
             <Link
               href="/project"
@@ -109,6 +110,14 @@ export const Navbar = () => {
             >
               Contact
             </Link>
+            <Link
+              href="/now"
+              active={pathname === "/now"}
+              color="sky"
+              size={typography.main.size}
+            >
+              Now
+            </Link>
           </DesktopLinkContainer>
         </DesktopOnly>
         <MobileOnly>
@@ -120,13 +129,13 @@ export const Navbar = () => {
             content={
               <VerticalLinks>
                 <Link
-                  href="/experience"
-                  active={pathname === "/experience"}
+                  href="/work"
+                  active={pathname === "/work"}
                   color="red"
                   onClick={() => setMobileAboutIsOpen(false)}
                   size={typography.main.size}
                 >
-                  Experience
+                  Work
                 </Link>
                 <Link
                   href="/project"
@@ -176,6 +185,15 @@ export const Navbar = () => {
                 >
                   Contact
                 </Link>
+                <Link
+                  href="/now"
+                  active={pathname === "/now"}
+                  color="sky"
+                  onClick={() => setMobileAboutIsOpen(false)}
+                  size={typography.main.size}
+                >
+                  Now
+                </Link>
               </VerticalLinks>
             }
           >
@@ -197,7 +215,7 @@ const Container = styled.div`
 
 const DesktopLinkContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(5, min-content);
   grid-gap: 48px;
 `;
 
