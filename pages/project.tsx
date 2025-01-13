@@ -22,6 +22,39 @@ export default function Project() {
       <Spacer spacing={60} />
 
       <Section
+        title="Boulder Pass"
+        subtitle="1 app for all bouldering gyms"
+        desc={
+          <>
+            All in one solution to managing climbers (
+            <Anchor
+              href="https://www.boulderpass.one/"
+              active
+              color="green"
+              target="_blank"
+            >
+              Website
+            </Anchor>
+            )
+          </>
+        }
+        color="green"
+      >
+        <List
+          items={[
+            [<Text type="sub">Flutter</Text>, <Text type="sub">Dart</Text>],
+            [<Text type="sub">Supabase</Text>],
+            [
+              <Text type="sub">Vercel</Text>,
+              <Text type="sub">Google play store</Text>,
+              <Text type="sub">Apple app store</Text>,
+            ],
+          ]}
+        />
+      </Section>
+      <Spacer spacing={60} />
+
+      <Section
         title="Dasu"
         subtitle="Publish your book online"
         desc={
@@ -30,7 +63,7 @@ export default function Project() {
             <Anchor
               href="https://dasu-web.vercel.app/"
               active
-              color="green"
+              color="blue"
               target="_blank"
             >
               Website
@@ -39,7 +72,7 @@ export default function Project() {
             <Anchor
               href="https://github.com/williamsk91/dasu"
               active
-              color="green"
+              color="blue"
               target="_blank"
             >
               GitHub
@@ -47,7 +80,7 @@ export default function Project() {
             )
           </>
         }
-        color="green"
+        color="blue"
       >
         <List
           items={[
@@ -72,7 +105,7 @@ export default function Project() {
             <Anchor
               href="https://github.com/williamsk91/poopypado"
               active
-              color="blue"
+              color="purple"
               target="_blank"
             >
               GitHub
@@ -80,7 +113,7 @@ export default function Project() {
             )
           </>
         }
-        color="blue"
+        color="purple"
       >
         <List
           items={[
@@ -101,7 +134,7 @@ export default function Project() {
             <Anchor
               href="https://calendar-data.vercel.app"
               active
-              color="purple"
+              color="sky"
               target="_blank"
             >
               Website
@@ -110,7 +143,7 @@ export default function Project() {
             <Anchor
               href="https://github.com/williamsk91/calendar-data"
               active
-              color="purple"
+              color="sky"
               target="_blank"
             >
               GitHub
@@ -118,7 +151,7 @@ export default function Project() {
             )
           </>
         }
-        color="purple"
+        color="sky"
       >
         <List
           items={[
@@ -147,7 +180,7 @@ export default function Project() {
             <Anchor
               href="https://github.com/williamsk91/clock"
               active
-              color="sky"
+              color="yellow"
               target="_blank"
             >
               GitHub
@@ -155,7 +188,7 @@ export default function Project() {
             )
           </>
         }
-        color="sky"
+        color="yellow"
       >
         <List
           items={[
@@ -192,7 +225,7 @@ export default function Project() {
             <Anchor
               href="https://github.com/williamsk91/KamiNote"
               active
-              color="yellow"
+              color="red"
               target="_blank"
             >
               GitHub
@@ -200,7 +233,7 @@ export default function Project() {
             )
           </>
         }
-        color="yellow"
+        color="red"
       >
         <List
           items={[
@@ -231,7 +264,7 @@ export default function Project() {
       <Section
         title="Mini projects"
         desc="A collection of smaller projects"
-        color="red"
+        color="green"
       >
         <List
           items={[

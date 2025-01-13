@@ -12,35 +12,59 @@ export default function Work() {
       <Section
         title="Now"
         subtitle="What I'm focused on right now"
-        info="Last updated Feb 2022"
+        info="Last updated Jan 2024"
         color="sky"
       >
         <List
           items={[
             [
               <Text type="sub">
-                Self Study{" "}
+                I'm working at{" "}
                 <Anchor
                   href="https://teachyourselfcs.com/"
                   color="sky"
                   active
                   target="_blank"
                 >
-                  Computer Science
-                </Anchor>
+                  Mercari
+                </Anchor>{" "}
+                as Frontend Tech Lead
               </Text>,
               <Text type="sub">
-                Work on{" "}
+                I'm self studying{" "}
+                <Anchor
+                  href="https://teachyourselfcs.com/"
+                  color="sky"
+                  active
+                  target="_blank"
+                >
+                  Computer Science.
+                </Anchor>{" "}
+                I'm almost done!
+              </Text>,
+              <Text type="sub">
+                I'm working on{" "}
                 <Anchor
                   href="https://dasu-web.vercel.app/"
                   color="sky"
                   active
                   target="_blank"
                 >
-                  Dasu
-                </Anchor>
+                  Boulder Pass
+                </Anchor>{" "}
+                in my free time
               </Text>,
-              <Text type="sub">Boulder</Text>,
+              <Text type="sub">
+                I spend a lot of time{" "}
+                <Anchor
+                  href="https://www.instagram.com/wills_try_stuff/"
+                  color="sky"
+                  active
+                  target="_blank"
+                >
+                  bouldering and travelling around Japan
+                </Anchor>{" "}
+              </Text>,
             ],
           ]}
         />

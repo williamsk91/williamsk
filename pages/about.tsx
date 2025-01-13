@@ -40,6 +40,7 @@ export default function About() {
         color="green"
       >
         <SkillList>
+          <Colored color="green">Go</Colored>,{" "}
           <Colored color="green">Express</Colored> (NodeJS),{" "}
           <Colored color="green">Phoenix</Colored> (Elixir),{" "}
           <Colored color="green">Ruby on Rails</Colored> (Ruby), GraphQL (Apollo
@@ -55,8 +56,9 @@ export default function About() {
         desc={
           <>
             Automatic <Colored color="blue">testing</Colored>,{" "}
-            <Colored color="blue">deployment</Colored>, and{" "}
-            <Colored color="blue">monitoring</Colored> for the best developer
+            <Colored color="blue">deployment</Colored>,{" "}
+            <Colored color="blue">monitoring</Colored>, and{" "}
+            <Colored color="blue">analytics</Colored> for the best developer
             experience.
           </>
         }
@@ -68,7 +70,8 @@ export default function About() {
           <Colored color="blue">Serverless Framework</Colored>,{" "}
           <Colored color="blue">Heroku</Colored>, Vercel, Netlify,{" "}
           <Colored color="blue">Github Actions</Colored>, Travis CI, Contentful,
-          Rollbar, and <Colored color="blue">Sentry</Colored>
+          Rollbar, <Colored color="blue">Sentry</Colored>, and{" "}
+          <Colored color="blue">BigQuery</Colored>
         </SkillList>
       </Section>
       <Spacer spacing={120} />

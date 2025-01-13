@@ -20,7 +20,7 @@ export const Navbar = () => {
   let text: string = "codes";
   switch (pathname) {
     case "/work":
-      text = "works at Cadmus";
+      text = "works at Mercari";
       break;
     case "/project":
       text = "codes for fun";
