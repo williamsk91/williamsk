@@ -39,14 +39,6 @@ export default function Contact() {
         </Text>
       </Section>
       <Spacer spacing={120} />
-      <Section title="Resume" color="red">
-        <Text type="main">
-          <Anchor href="Williams Kwan - Resume.pdf" color="red" download>
-            Click to download
-          </Anchor>
-        </Text>
-      </Section>
-      <Spacer spacing={120} />
     </div>
   );
 }
